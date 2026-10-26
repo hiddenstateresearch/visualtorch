@@ -12,7 +12,7 @@ repos:
       - id: detect-private-key
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: "v2.3.0"
+    rev: "v2.4.0"
     hooks:
       - id: mypy
         additional_dependencies: [types-PyYAML]
@@ -34,13 +34,13 @@ repos:
         additional_dependencies: ["prettier@3.1.0"]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.49.1
+    rev: v0.50.0
     hooks:
       - id: markdownlint
         args: ["--ignore", "paper/paper.md"]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: "v0.15.22"
+    rev: "v0.17.2"
     hooks:
       # Run the linter.
       - id: ruff
